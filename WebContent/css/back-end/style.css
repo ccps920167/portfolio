@@ -1,0 +1,102 @@
+@@charset "UTF-8";
+
+/*  css reset 開始 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,tt,var,b,u,i,center,
+dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
+aside,canvas,details,embed,figure,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,
+summary,time,mark,audio,vedio{
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+blockquote,q {quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after {content: none;}
+table{border: collapse: collapse;border-spacing: 0;}
+/* css reset結束 */
+
+/* 公共樣式開始 */
+body,th,td,button,input,select,textarea {font: 12px/1.62 "Microsoft Yahei","Hiragino Sans GB",
+"Helvetica Naue", Helvetica , tahoma , arial ,Verdana,sans-serif;colar: #333;}
+ol,ul {list-style: none;}
+img {border: 0;vertical-align: middle;}
+a{text-decoration: none;outline: none;blr:expression(this.onFocus=this.blur());}
+h1{font-size: 36px;}
+h2{font-size: 30px;}
+h3{font-size: 24px;}
+h4{font-size: 20px;color:#4F4F4F;font-family:Microsoft JhengHei;}
+h5{font-size: 14px;}
+h6{font-size: 12px;}
+.left, .l {float: left;}
+.right, .r {float: right;}
+.clearfix, .cf{*zoom:1}
+.clearfix:after, .cf:after {content: ".";display: :block;height:0;clear:both;visibility:hidden;}
+.clear, .cl {clear:both;}
+/* 公共樣式結束 */
+
+/* 後台登入介面樣式 */
+.login{
+  width: 500px;
+  height: 340px;
+  background:	#FF5151	;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -170px;0 0 -250px;
+}
+.loginmain {
+  padding: 5px;
+  color:#fff;
+}
+.loginmain ul li {
+  margin-top: 15px
+}
+.loginmain ul li span {
+  display: : inline-block;
+  width:125px;
+  height: 30px;
+  text-align: right;
+  font-size: 18px;
+}
+.loginmain ul li input[type="text"], .loginmain ul li input[type="password"]{
+  width: 250px;
+  height: 30px;
+  padding:0 5px;
+}
+.loginmain ul li .verifyimg {
+  width: 260px;
+  margin-left: 95px;
+  background: #FF5151;
+}
+.loginmain ul li input[type="button"]{
+  width: 80px;
+  height: 34px;
+  border:none;
+  background: #007500;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 95px;
+  cursor: pointer;
+}
+.loginmain ul li input[type="button"]:hover{
+  background: #007500;
+}
+.loginmain span#text {
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+}
+/* 登入介面樣式結束 */
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFBF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

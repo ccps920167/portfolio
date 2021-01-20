@@ -1,0 +1,94 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+
+   <h3><b>關於課程</b></h3>
+   <div class="row">
+       <div class="col-3">
+
+           <div class="row">
+               <div class="image">
+                   <img src="<%=request.getContextPath()%>/img/icon/chaptericon.png" width="50px" alt="">
+               </div>
+               <div class="statement">
+                   <div><span>課程單元數</span></div>
+                   <div><span><%=class_unitVO.size()%>個單元</span></div>
+               </div>
+
+
+           </div>
+       </div>
+
+
+       <div class="col-3">
+
+           <div class="row">
+               <div class="image">
+                   <img src="<%=request.getContextPath()%>/img/icon/people.png" width="50px" alt="">
+               </div>
+               <div class="statement">
+                   <div><span>課程總人數</span></div>
+                   <div><%=listOrder.size()%>人</div>
+               </div>
+
+           </div>
+       </div>
+
+       <div class="col-3">
+
+           <div class="row">
+               <div class="image">
+                   <img src="<%=request.getContextPath()%>/img/icon/start.png" width="50px" alt="">
+               </div>
+               <div class="statement">
+     
+                   <div><span>開課時間</span></div>
+                   <div><fmt:formatDate value="<%=class_infoVO.getStartclass_time() %>" pattern="yyyy-MM-dd"/></div>
+               </div>
+
+           </div>
+       </div>
+       <div class="col-3">
+
+           <div class="row">
+               <div class="image">
+                   <img src="<%=request.getContextPath()%>/img/icon/timeicon.png" width="50px" alt="">
+               </div>
+               <div class="statement">
+                   <div><span>課程時長</span></div>
+                   <div><span><%=class_infoVO.getClass_length()%></span></div>
+               </div>
+
+           </div>
+       </div>
+
+   </div>
+   <br>
+   <br>
+   <br>
+
+   <h3><b>課程描述</b></h3>
+   <div class="classstatement">
+      <%
+   String getClass_description = class_infoVO.getClass_description();
+   if(getClass_description == null)
+   	getClass_description="無資料";
+
+   %>
+       <span><%=getClass_description %></span>
+   </div>
+<h3><b>老師簡述</b></h3>
+   <div class="classstatement">
+   <%
+   String teacher=class_infoVO.getMember_id();
+   Member_infoService memSvc=new Member_infoService();
+   Member_infoVO member_infoVO2 =memSvc.getOneMember_info(teacher);
+   String getMember_about = member_infoVO2.getMember_about();
+   if(getMember_about == null)
+   	getMember_about="無資料";
+
+   %>
+   
+       <span><%= getMember_about %></span>
+    </div>
+
+</div>

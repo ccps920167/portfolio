@@ -1,0 +1,59 @@
+/* 套用全部 */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* header  */
+        header {
+            width: 100%;
+            box-shadow: 0px 1px 10px rgb(202, 202, 197);
+            z-index: 9999;
+            position: sticky;
+            top: 0;
+        }
+        #talk {
+            position: fixed;
+            right: 20px;
+            bottom: 30px;
+            height: 60px;
+        }
+
+        ul.navbar-nav li {
+            position: relative;
+            content: "�";
+            /* float:left; */
+        }
+
+        ul.navbar-nav li ul {
+            display: none;
+            float: left;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.navbar-nav li:hover>ul {
+            display: block;
+            text-align: center;
+        }
+
+        ul.navbar-nav ul li:hover>ul{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            text-align: center;
+        }
+        ul.navbar-nav ul li>ul li:hover{
+            display: block;
+            cursor: pointer;
+        }
+
+        li img {
+            height: 20px;
+            width: 20px;
+        }
+        
+        .dropdown-item{
+            text-align: center;
+        }

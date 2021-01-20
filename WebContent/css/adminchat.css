@@ -1,0 +1,269 @@
+
+html{
+	margin-left:0px;
+}
+html, body {
+	font: 15px verdana, Times New Roman, arial, helvetica, sans-serif,
+		Microsoft JhengHei;
+	width: 1920px;
+	height: 700px;
+	background: #eeeeda;
+	    
+}
+
+.panel {
+/* 	float: right; */
+	    border: 2px solid #72828a;
+    border-radius: 5px;
+    width: 580px;
+    height: 84px;
+    position: relative;
+    left: -175px;
+    top: 26px;
+        background-color: #feff98;
+}
+
+.message-area {
+     height: 350px;
+    resize: none;
+    box-sizing: border-box;
+    overflow: auto;
+    background-color: #fffbe6;
+    top: 27px;
+    left: -175px;
+    width: 580px;
+}
+}
+
+.input-area {
+    background: #c3ffc4cf;
+    box-shadow: inset 0 0 10px #ffffff;
+    height:75px;
+    
+}
+
+.input-area input {
+	margin: 0.5em 0em 0.5em 0.5em;
+}
+
+.text-field {
+	border: 1px solid grey;
+	padding: 0.2em;
+	box-shadow: 0 0 5px #000000;
+}
+
+h1 {
+	font-size: 1.5em;
+	padding: 5px;
+	margin: 5px;
+}
+
+#message {
+	min-width: 50%;
+	max-width: 60%;
+}
+
+.statusOutput {
+    background: #8c8a8d;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid grey;
+    padding: 0.2em;
+    box-shadow: 0 0 5px #000000;
+    margin-top: -76%;
+    margin-left: -20%;
+    font-size: 25px;
+    width: 461px;
+    height: 42px;
+}
+
+#chatrow {
+	position:relative; 
+left:80px;
+bottom:20px;
+/* 	float: left; */
+/*     width: 400px; */
+/*         height: 580px; */
+/*     overflow: scroll; */
+    
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 2px;
+  background-color: #000000;
+  border-radius: 8px;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li{
+    display: inline-block;
+    clear: both;
+/*     padding: 13px; */
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+    word-break: break-word;
+}
+
+.friend{
+    float: left;
+    background: #2b00ff;
+    color: #ffffff;
+    border: 1px #000000 solid;
+    font-size: 18px;
+    height: 36px;
+    line-height: 3px;
+    box-shadow: 0 0 5px #000;
+    padding: 16px;
+}
+
+.me{
+  float: right;
+  background: #afafafb5;
+  color: #000000;
+  border: 1px #000000 solid;
+  font-size: 18px;
+  height: 36px;
+    line-height: 3px;
+    box-shadow: 0 0 5px #000;
+    padding: 16px;
+}
+
+.friend + .me{
+  border-bottom-right-radius: 5px;
+}
+
+.me + .me{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.me:last-of-type {
+  border-bottom-right-radius: 6px;
+}
+
+.box {
+¡@¡@border:1px solid #cccccc;
+¡@¡@width:300px;
+¡@¡@height:100px;
+¡@¡@background-color:#FFFFFF;
+¡@¡@padding:5px;
+¡@¡@overflow:auto;
+}
+
+.time_me{
+    float: right;
+/*     background: #ffffff; */
+    color: #000;
+     transform: translateY(12%);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.time_friend{
+    float: left;
+    /* background: #ffffff; */
+    color: #000;
+    transform: translateY(12%);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.select{
+	text-align: center;
+	 font-size: 22px; 
+	 color: #ffffff; 
+	 background: #0181cc; #0181 cc;
+	  max-inline-size: fit-content; 
+	  pointer-events: none;
+}
+ #xx {
+/*         display: inline-block; */
+    /* right: -356px; */
+    position: relative;
+/*     top: -39px; */
+    margin-left: -345px;
+/*     right: -566px; */
+       width: -1px;
+    }
+.pic{
+	width:26px;
+}
+.chatdiv1{
+    margin-left: 369px;
+    /* height: 200px; */
+    /* margin-top: 60px; */
+    width: 320px;
+    height: 500px;
+    display: inline-block;
+}
+.chatdiv2{
+/*     margin-left: 660px; */
+    margin-top: -38px;
+    width:650px;
+/*     height:500px; */
+       display: inline-block;
+}
+
+.font-bold{
+	color:blue;
+	font-weight:bold;
+}
+/* div.column{ */
+/* 	display:none; */
+/* } */
+.displaynone{
+	display:none;
+}
+.unread{
+	backgroundcolor:pink;
+}
+.chatbkpic{
+/* 	background-image:url(/TEA102G5/img/bg/tomato4.png);width:860px;height:560px;border:2px #ccc solid; */
+/* 	background-position:center; */
+/* 	background-repeat:no-repeat; */
+/* 	background-position-y: -242px; */
+}
+
+.inner {
+    background-color: #000000f5;
+    display: flex;
+    height: 24px;
+    align-items: center;
+    font-size: 18px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 314px;
+    border-radius: 0px;
+    color: white;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.box {
+¡@¡@border:1px solid #cccccc;
+¡@¡@width:300px;
+¡@¡@height:100px;
+¡@¡@background-color:#FFFFFF;
+¡@¡@padding:5px;
+¡@¡@overflow:auto;
+}
+.all{
+width:970px;
+height:500px;
+position:absolute;
+top:50px;
+left:275px;
+
+}
+

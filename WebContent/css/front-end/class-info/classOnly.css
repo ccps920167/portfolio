@@ -1,0 +1,51 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+/* �璇蕭�嚙踐�蕭嚙� */
+.sidebar {
+	background: linear-gradient(rgba(255, 255, 255, 0.466),
+		rgba(255, 255, 255, 0.5)),
+		url(/TEA102G5/img/page/pexels-photo-257794-02.jpg);
+	border: 1px #ccc solid;
+	padding: 10px;
+	/*嚙踐嚙踝蕭�謆Ｘ謍湛蕭謢嗆撞��隤蕭��撖蕭��蕭謢嗆撞*/
+	/* font-size: 0; */
+}
+
+#talk {
+	position: fixed;
+	right: 20px;
+	bottom: 30px;
+	height: 60px;
+}
+
+/* ��蕭�����蒂瘙荔蕭 */
+#content {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	border: 1px rgb(204, 204, 204) solid;
+}
+
+#content-class {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	/* border: 1px rgb(204, 204, 204) solid; */
+}
+
+.video-js {
+	position: relative;
+	top: 1%;
+}
+
+.class-btn {
+	background-color: rgba(255, 255, 255);
+	color: black;
+	border: 1px rgb(204, 204, 204) solid;
+	padding-right: 10px;
+	padding-left: 0;
+	padding: 15px;
+	width:100%;
+}
